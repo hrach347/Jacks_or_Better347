@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacks or Better</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="chip.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="get_money" onclick="getMoney()">
+        <h1>
+            GET FREE CHIPS
+        </h1>
+        <button>
+            GET
+        </button>
+    </div>
+    <div class="money_table" id="money_table">
+        <table>
+            <tr class="head">
+                <td>HAND</td>
+                <td onclick="make_bet(10,bet10)" id="bet10">BET 10</td>
+                <td onclick="make_bet(20,bet20)" id="bet20">BET 20</td>
+                <td onclick="make_bet(30,bet30)" id="bet30">BET 30</td>
+                <td onclick="make_bet(50,bet50)" id="bet50">BET 50</td>
+                <td onclick="make_bet(100,bet100)" id="bet100">BET 100</td>
+            </tr>
+            <tr>
+                <td>Flash Royal</td>
+                <td>1000</td>
+                <td>2000</td>
+                <td>3000</td>
+                <td>5000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Straight Flash</td>
+                <td>500</td>
+                <td>1000</td>
+                <td>1500</td>
+                <td>2500</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>4 of a Kind</td>
+                <td>300</td>
+                <td>600</td>
+                <td>900</td>
+                <td>1500</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>Full House</td>
+                <td>250</td>
+                <td>500</td>
+                <td>750</td>
+                <td>1250</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Flash</td>
+                <td>150</td>
+                <td>300</td>
+                <td>450</td>
+                <td>750</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Straight</td>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>500</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>3 of a Kind</td>
+                <td>50</td>
+                <td>100</td>
+                <td>150</td>
+                <td>250</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2 pairs</td>
+                <td>25</td>
+                <td>50</td>
+                <td>75</td>
+                <td>125</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Jacks or Better</td>
+                <td>20</td>
+                <td>40</td>
+                <td>60</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+        </table>
+    </div>
+    <div id="win_lose">
+        <h1 id="text_wl">
+            YOU WIN !
+            <h1 id="win_hand">
+               
+            </h1>
+        </h1>
+    </div>
+
+    <div class="cards">
+        <div class="card" id="card1" onclick="hold(0)"></div>
+        <div class="card" id="card2" onclick="hold(1)"></div>
+        <div class="card" id="card3" onclick="hold(2)"></div>
+        <div class="card" id="card4" onclick="hold(3)"></div>
+        <div class="card" id="card5" onclick="hold(4)"></div>
+    </div>
+    <div>
+
+    </div>
+    <div class="flex">
+        <div id="credits">
+            CREDITS: 1000$
+        </div>
+        <button class="bet_draw" id="bet_draw" onclick="bet()">
+            BET
+        </button>
+    </div>
+
+</body>
+
+</html>

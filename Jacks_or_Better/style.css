@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    background: black;
+    color: gold;
+    border: 2px solid gold;
+    margin-top: 10px;
+}
+
+.head {
+    transition: 400ms;
+}
+
+.head td {
+    border-bottom: solid 1px gold;
+    cursor: pointer;
+    padding: 20px;
+    transition: 400ms;
+}
+
+.head td:hover {
+    background: red;
+    color: gold;
+}
+
+td {
+    text-align: center;
+    border-right: 1px solid gold;
+}
+td::selection{
+    background: yellow;
+    color: black;
+}
+td:hover {
+    background: yellow;
+    color: black;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 280px;
+    background-image: url('cards/cardback.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: gold;
+    font-family: 'Gajraj One', sans-serif;
+    transition: 800ms;
+}
+
+.card:hover {
+    transition: 300ms;
+    box-shadow: inset 0px 0px 100px black;
+}
+
+.flex {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#credits {
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 50px;
+    color: gold;
+    text-shadow: 0px 0px 10px black;
+    border-top: solid gold 3px;
+    border-bottom: solid gold 3px;
+    transition: 300ms;
+}
+#credits:hover{
+    border-bottom: 17px solid gold;
+}
+.bet_draw {
+    width: 200px;
+    height: 70px;
+    background: rgb(255, 131, 30);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(255, 131, 30);
+    color: white;
+    text-shadow: 0px 0px 20px red;
+    font-size: 40px;
+    font-family: sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+
+.bet_draw:hover {
+    background: rgb(255, 170, 51);
+    box-shadow: 0px 0px 20px black;
+}
+
+.bet_draw:active {
+    background: transparent;
+    color: orangered;
+    border: solid orangered 3px;
+}
+
+#get_money {
+    width: 60%;
+    height: 270px;
+    border: solid 5px orange;
+    background: linear-gradient(rgb(64, 17, 0),black);
+    position: fixed;
+    left: 20%;
+    top: 10px;
+    color: gold;
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    animation: disco 200ms infinite linear;
+    display: none;
+}
+
+#get_money button {
+    width: 30%;
+    height: 70px;
+    margin-top: 30px;
+    background: rgb(255, 131, 30);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(255, 131, 30);
+    color: white;
+    text-shadow: 0px 0px 20px red;
+    font-size: 40px;
+    font-family: sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+
+#get_money button:hover {
+    background: rgb(255, 170, 51);
+    box-shadow: 0px 0px 20px black;
+}
+
+#get_money button:active {
+    background: transparent;
+    color: orangered;
+    border: solid orangered 3px;
+}
+
+@keyframes disco{
+    100%{
+        color: red;
+        border-color: red;
+    }
+}
+
+#win_lose{
+    width: 60%;
+    height: 270px;
+    border: solid 5px orange;
+    background: linear-gradient(rgb(64, 17, 0),black);
+    position: fixed;
+    left: 20%;
+    top: 10px;
+    color: gold;
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    animation: disco 200ms infinite linear;
+    display: none;
+}
+#win_lose h1{
+text-align: center;
+font-size: 90px;
+font-family: 'Gajraj One', sans-serif;
+}
+#win_hand{
+    font-size: 50px !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+table{
+    width: 80%;
+    font-size: 13px;
+}
+.cards {
+    width: 95%;
+    margin-top: 20px;
+}
+.card{
+    width: 150px;
+    height: 200px;
+    font-size: 45px;
+}
+.flex{
+    width: 90%;
+    margin-top: 50px;
+}
+#credits{
+    font-size: 40px;
+    border: none;
+}
+#win_lose{
+    height: 230px;
+}
+#get_money{
+    height: 220px;
+    font-size: 25px;
+}
+#get_money button{
+    width: 40%;
+    height: 50px;
+    font-size: 25px;
+}
+}
+@media screen and (max-width: 760px) {
+    table{
+        width: 90%;
+    }
+    .cards {
+        width: 95%;
+        margin-top: 40px;
+    }
+    .card{
+        width: 120px;
+        height: 180px;
+        font-size: 40px;
+    }
+    .flex{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .bet_draw{
+        width: 170px;
+        height: 60px;
+    }
+    #win_lose{
+        height: 200px;
+    }
+    #text_wl{
+        font-size: 80px !important;
+    }
+    #win_hand{
+        font-size: 27px !important;
+    }    
+    #get_money{
+        height: 200px;
+        font-size: 20px;
+    }
+    #get_money button{
+        width: 30%;
+        height: 40px;
+        font-size: 20px;
+    }
+ }
+
+ @media screen and (max-width: 645px) {
+    .cards {
+        margin-top: 40px;
+    }
+    .card{
+        width: 105px;
+        height: 150px;
+        font-size: 33px;
+    }  
+    #get_money{
+        height: 180px;
+        font-size: 16px;
+    }
+    #get_money button{
+        width: 40%;
+        height: 35px;
+        font-size: 20px;
+    }
+ }
+ @media screen and (max-width: 505px) {
+    table{
+        width: 98%;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .head td{
+        padding: 10px;
+    }
+    .cards {
+        margin-top: 40px;
+    }
+    .card{
+        width: 65px;
+        height: 90px;
+        font-size: 20px;
+    } 
+    #credits{
+        font-size: 24px;
+    } 
+    .bet_draw{
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
+    #win_lose{
+        height: 150px;
+        margin-top: 30px;
+    }
+    #text_wl{
+        font-size: 50px !important;
+        margin-top: 10px;
+    }
+    #win_hand{
+        font-size: 18px !important;
+    }  
+    #get_money{
+        height: 140px;
+        font-size: 10px;
+    }
+    #get_money button{
+        width: 50%;
+        height: 30px;
+        font-size: 20px;
+    }
+ }
